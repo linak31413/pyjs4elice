@@ -2,39 +2,45 @@
   {
     "tc_id": "TC-001",
     "status": "PASS",
-    "reason": []
+    "reason": [],
+    "evidence": "logs/TC-001.log"
   },
   {
     "tc_id": "TC-002",
     "status": "PASS",
-    "reason": []
+    "reason": [],
+    "evidence": "logs/TC-002.log"
   },
   {
     "tc_id": "TC-ERR-01",
     "status": "FAIL",
     "reason": [
       "missing=['id']"
-    ]
+    ],
+    "evidence": "logs/TC-ERR-01.log"
   },
   {
     "tc_id": "TC-ERR-02",
     "status": "FAIL",
     "reason": [
       "id-type"
-    ]
+    ],
+    "evidence": "logs/TC-ERR-02.log"
   },
   {
     "tc_id": "TC-ERR-03",
     "status": "FAIL",
     "reason": [
       "invalid-status"
-    ]
+    ],
+    "evidence": "logs/TC-ERR-03.log"
   },
   {
     "tc_id": "TC-ERR-04",
     "status": "FAIL",
     "reason": [
       "elapsed-negative"
-    ]
+    ],
+    "evidence": "logs/TC-ERR-04.log"
   }
 ]

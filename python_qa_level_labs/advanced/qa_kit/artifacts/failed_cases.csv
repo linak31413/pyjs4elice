@@ -1,0 +1,5 @@
+tc_id,status,reason,evidence
+TC-ERR-01,FAIL,missing=['id'],logs/TC-ERR-01.log
+TC-ERR-02,FAIL,id-type,logs/TC-ERR-02.log
+TC-ERR-03,FAIL,invalid-status,logs/TC-ERR-03.log
+TC-ERR-04,FAIL,elapsed-negative,logs/TC-ERR-04.log
