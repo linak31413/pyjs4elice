@@ -34,6 +34,6 @@ const report = {
     acc[r.result] = (acc[r.result] || 0) + 1;
     return acc;
   }, {})
-};
+}; 
 
 console.log(JSON.stringify(report, null, 2));
