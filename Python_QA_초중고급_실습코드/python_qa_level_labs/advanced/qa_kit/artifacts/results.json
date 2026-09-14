@@ -1,0 +1,22 @@
+[
+  {
+    "tc_id": "TC-001",
+    "status": "PASS",
+    "reason": []
+  },
+  {
+    "tc_id": "TC-002",
+    "status": "FAIL",
+    "reason": [
+      "invalid-status"
+    ]
+  },
+  {
+    "tc_id": "TC-003",
+    "status": "FAIL",
+    "reason": [
+      "missing=['id']",
+      "elapsed-negative"
+    ]
+  }
+]

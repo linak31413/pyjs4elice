@@ -1,0 +1,11 @@
+{
+  "name": "javascript-qa-level-labs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "beginner": "node beginner/07_beginner_challenge.js",
+    "intermediate": "node intermediate/07_intermediate_challenge.js",
+    "advanced": "node advanced/07_advanced_challenge.js",
+    "qa-mini": "node advanced/04_qa_framework.js"
+  }
+}

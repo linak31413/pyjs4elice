@@ -1,0 +1,28 @@
+[
+  {
+    "tc_id": "TC-001",
+    "actual": {
+      "id": 1,
+      "status": "ok",
+      "elapsed_ms": 120
+    },
+    "expected_pass": true
+  },
+  {
+    "tc_id": "TC-002",
+    "actual": {
+      "id": 2,
+      "status": "bad",
+      "elapsed_ms": 80
+    },
+    "expected_pass": false
+  },
+  {
+    "tc_id": "TC-003",
+    "actual": {
+      "status": "ok",
+      "elapsed_ms": -1
+    },
+    "expected_pass": false
+  }
+]
