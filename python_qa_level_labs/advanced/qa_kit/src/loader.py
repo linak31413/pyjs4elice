@@ -1,5 +1,7 @@
 import json
 from pathlib import Path
 
-def load_cases(path="data/cases.json"):
+DEFAULT_PATH = "data/cases.json"
+
+def load_cases(path=DEFAULT_PATH):
     return json.loads(Path(path).read_text(encoding="utf-8"))
