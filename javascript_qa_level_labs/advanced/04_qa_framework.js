@@ -44,4 +44,15 @@ test('합계 계산', () => {
   expect([10, 20, 30].reduce((a, b) => a + b, 0)).toBe(60);
 });
 
+// [여기부터 추가] 프레임워크 실패 수집 동작을 확인하기 위한 FAIL 케이스
+test('잘못된 합계 계산 (FAIL 테스트)', () => {
+  // 실제 합은 30이지만 50을 기대하여 에러 발생 유도
+  expect([10, 20].reduce((a, b) => a + b, 0)).toBe(50); 
+});
+
+test('필수 키워드 누락 (FAIL 테스트)', () => {
+  // 문자열에 'SUCCESS'가 없으므로 에러 발생 유도
+  expect('Login FAILED').toInclude('SUCCESS'); 
+});
+
 run();
