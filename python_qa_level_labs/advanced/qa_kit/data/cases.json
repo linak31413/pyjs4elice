@@ -30,7 +30,7 @@
     "tc_id": "TC-004",
     "actual": {
       "status": "fail",
-      "elapsed_ms": 13.5
+      "elapsed_ms": 13.2
     },
     "expected_pass": false
   },
