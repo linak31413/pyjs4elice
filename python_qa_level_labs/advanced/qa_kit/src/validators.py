@@ -10,16 +10,27 @@ LOG_ERROR_PATTERN = re.compile(r"ERROR|FATAL")
 
 def validate_response(data):
     errors = []
-    missing = KEYS_REQUIRED - data.keys()
+    required = {"id", "status", "elapsed_ms"}
+    
+    # 1. 필수 키 존재 검증
+    missing = required - data.keys()
     if missing:
         errors.append(f"missing={sorted(missing)}")
-    if "status" in data and data["status"] not in STATUS_ALLOWED:
+        
+    # 2. 값 및 타입 검증
+    if "id" in data and not isinstance(data["id"], int):
+        errors.append("id-type")
+        
+    if "status" in data and data["status"] not in {"ok", "fail"}:
         errors.append("invalid-status")
+        
     if "elapsed_ms" in data:
-        if not isinstance(data["elapsed_ms"], (int,float)):
+        if not isinstance(data["elapsed_ms"], (int, float)):
             errors.append("elapsed-type")
         elif data["elapsed_ms"] < 0:
+            # 실습 과제: elapsed_ms 음수 금지 조건
             errors.append("elapsed-negative")
+            
     return errors
 
 

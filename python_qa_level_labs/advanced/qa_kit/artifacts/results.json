@@ -10,52 +10,28 @@
     "reason": []
   },
   {
-    "tc_id": "TC-003",
-    "status": "PASS",
-    "reason": []
-  },
-  {
-    "tc_id": "TC-004",
+    "tc_id": "TC-ERR-01",
     "status": "FAIL",
     "reason": [
       "missing=['id']"
     ]
   },
   {
-    "tc_id": "TC-005",
+    "tc_id": "TC-ERR-02",
     "status": "FAIL",
     "reason": [
-      "missing=['status']"
+      "id-type"
     ]
   },
   {
-    "tc_id": "TC-006",
-    "status": "FAIL",
-    "reason": [
-      "missing=['elapsed_ms']"
-    ]
-  },
-  {
-    "tc_id": "TC-007",
+    "tc_id": "TC-ERR-03",
     "status": "FAIL",
     "reason": [
       "invalid-status"
     ]
   },
   {
-    "tc_id": "TC-008",
-    "status": "FAIL",
-    "reason": [
-      "elapsed-type"
-    ]
-  },
-  {
-    "tc_id": "TC-009",
-    "status": "PASS",
-    "reason": []
-  },
-  {
-    "tc_id": "TC-010",
+    "tc_id": "TC-ERR-04",
     "status": "FAIL",
     "reason": [
       "elapsed-negative"

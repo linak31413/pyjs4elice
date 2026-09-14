@@ -1,89 +1,32 @@
 [
   {
     "tc_id": "TC-001",
-    "actual": {
-      "id": 1,
-      "status": "ok",
-      "elapsed_ms": 120
-    },
+    "actual": {"id": 1, "status": "ok", "elapsed_ms": 120},
     "expected_pass": true
   },
   {
     "tc_id": "TC-002",
-    "actual": {
-      "id": 2,
-      "status": "fail",
-      "elapsed_ms": 80
-    },
+    "actual": {"id": 2, "status": "fail", "elapsed_ms": 45},
     "expected_pass": true
   },
   {
-    "tc_id": "TC-003",
-    "actual": {
-      "id": 3,
-      "status": "ok",
-      "elapsed_ms": 10.5
-    },
-    "expected_pass": true
-  },
-  {
-    "tc_id": "TC-004",
-    "actual": {
-      "status": "fail",
-      "elapsed_ms": 13.2
-    },
+    "tc_id": "TC-ERR-01",
+    "actual": {"status": "ok", "elapsed_ms": 100},
     "expected_pass": false
   },
   {
-    "tc_id": "TC-005",
-    "actual": {
-      "id": 5,
-      "elapsed_ms": 2
-    },
+    "tc_id": "TC-ERR-02",
+    "actual": {"id": "3", "status": "ok", "elapsed_ms": 50},
     "expected_pass": false
   },
   {
-    "tc_id": "TC-006",
-    "actual": {
-      "id": 6,
-      "status": "fail"
-    },
+    "tc_id": "TC-ERR-03",
+    "actual": {"id": 4, "status": "unknown", "elapsed_ms": 10},
     "expected_pass": false
   },
   {
-    "tc_id": "TC-007",
-    "actual": {
-      "id": 7,
-      "status": "bad",
-      "elapsed_ms": 836
-    },
-    "expected_pass": false
-  },
-  {
-    "tc_id": "TC-008",
-    "actual": {
-      "id": 8,
-      "status": "ok",
-      "elapsed_ms": "123"
-    },
-    "expected_pass": false
-  },
-  {
-    "tc_id": "TC-009",
-    "actual": {
-      "id": 9,
-      "status": "ok",
-      "elapsed_ms": 0
-    },
-    "expected_pass": true
-  },
-  {
-    "tc_id": "TC-010",
-    "actual": {
-      "id": 10,
-      "status": "fail",
-      "elapsed_ms": -1
-    },
+    "tc_id": "TC-ERR-04",
+    "actual": {"id": 5, "status": "ok", "elapsed_ms": -100},
     "expected_pass": false
   }
 ]
