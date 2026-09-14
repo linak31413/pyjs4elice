@@ -2,9 +2,9 @@
 // [응용 확장] 실제 API 호출 대신 응답 객체를 검증한다.
 
 const response = {
-  status: 200,
+  status: 404,    // FAIL
   body: {
-    userId: 101,
+    userId: "as", // FAIL
     name: 'tester',
     roles: ['qa', 'viewer']
   }
@@ -18,4 +18,14 @@ const checks = [
   ['qa role 포함', response.body.roles.includes('qa')]
 ];
 
-console.table(checks.map(([check, ok]) => ({ check, result: ok ? 'PASS' : 'FAIL' })));
+// 1. 전체 검증 결과를 객체 배열로 매핑
+const results = checks.map(([check, ok]) => ({ check, result: ok ? 'PASS' : 'FAIL' }));
+
+console.log("=== 전체 검증 결과 ===");
+console.table(results);
+
+// 2. 교재 수행 절차: FAIL 검증만 추출한다.
+const failedChecks = results.filter(item => item.result === 'FAIL');
+
+console.log("=== 실패한 검증 목록 ===");
+console.table(failedChecks);
