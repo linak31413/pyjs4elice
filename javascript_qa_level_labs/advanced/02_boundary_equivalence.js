@@ -1,17 +1,16 @@
-// 고급 02: 경계값/동등분할 사고를 코드로 표현
-// [응용 확장]
-
-const ageCases = [
-  { id: 'AGE-001', age: -1, expected: false },
-  { id: 'AGE-002', age: 0, expected: true },
-  { id: 'AGE-003', age: 120, expected: true },
-  { id: 'AGE-004', age: 121, expected: false }
+const lengthCases = [
+  { id: 'LEN-001', input: '1234567', expected: false },
+  { id: 'LEN-002', input: '12345678', expected: true },
+  { id: 'LEN-003', input: '12345678901234567890', expected: true },
+  { id: 'LEN-004', input: '123456789012345678901', expected: false },
+  { id: 'LEN-004', input: '', expected: true }
 ];
 
-const isValidAge = age => Number.isInteger(age) && age >= 0 && age <= 120;
+// 문자열 타입인지 확인하고, 길이가 8 이상 20 이하인지 판정하는 함수
+const isValidLength = str => typeof str === 'string' && str.length >= 8 && str.length <= 20;
 
-const results = ageCases.map(tc => {
-  const actual = isValidAge(tc.age);
+const results = lengthCases.map(tc => {
+  const actual = isValidLength(tc.input);
   return { ...tc, actual, result: actual === tc.expected ? 'PASS' : 'FAIL' };
 });
 
