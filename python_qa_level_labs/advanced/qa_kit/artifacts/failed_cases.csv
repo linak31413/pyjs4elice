@@ -1,5 +1,11 @@
 tc_id,status,reason,evidence
-TC-ERR-01,FAIL,missing=['id'],logs/TC-ERR-01.log
-TC-ERR-02,FAIL,id-type,logs/TC-ERR-02.log
-TC-ERR-03,FAIL,invalid-status,logs/TC-ERR-03.log
-TC-ERR-04,FAIL,elapsed-negative,logs/TC-ERR-04.log
+TC-011,FAIL,missing=['id'],logs/TC-011.log
+TC-012,FAIL,missing=['status'],logs/TC-012.log
+TC-013,FAIL,missing=['elapsed_ms'],logs/TC-013.log
+TC-014,FAIL,id-type,logs/TC-014.log
+TC-015,FAIL,id-type,logs/TC-015.log
+TC-016,FAIL,invalid-status,logs/TC-016.log
+TC-017,FAIL,invalid-status,logs/TC-017.log
+TC-018,FAIL,elapsed-negative,logs/TC-018.log
+TC-019,FAIL,elapsed-negative,logs/TC-019.log
+TC-020,FAIL,elapsed-type,logs/TC-020.log

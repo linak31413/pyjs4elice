@@ -12,35 +12,131 @@
     "evidence": "logs/TC-002.log"
   },
   {
-    "tc_id": "TC-ERR-01",
+    "tc_id": "TC-003",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-003.log"
+  },
+  {
+    "tc_id": "TC-004",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-004.log"
+  },
+  {
+    "tc_id": "TC-005",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-005.log"
+  },
+  {
+    "tc_id": "TC-006",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-006.log"
+  },
+  {
+    "tc_id": "TC-007",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-007.log"
+  },
+  {
+    "tc_id": "TC-008",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-008.log"
+  },
+  {
+    "tc_id": "TC-009",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-009.log"
+  },
+  {
+    "tc_id": "TC-010",
+    "status": "PASS",
+    "reason": [],
+    "evidence": "logs/TC-010.log"
+  },
+  {
+    "tc_id": "TC-011",
     "status": "FAIL",
     "reason": [
       "missing=['id']"
     ],
-    "evidence": "logs/TC-ERR-01.log"
+    "evidence": "logs/TC-011.log"
   },
   {
-    "tc_id": "TC-ERR-02",
+    "tc_id": "TC-012",
+    "status": "FAIL",
+    "reason": [
+      "missing=['status']"
+    ],
+    "evidence": "logs/TC-012.log"
+  },
+  {
+    "tc_id": "TC-013",
+    "status": "FAIL",
+    "reason": [
+      "missing=['elapsed_ms']"
+    ],
+    "evidence": "logs/TC-013.log"
+  },
+  {
+    "tc_id": "TC-014",
     "status": "FAIL",
     "reason": [
       "id-type"
     ],
-    "evidence": "logs/TC-ERR-02.log"
+    "evidence": "logs/TC-014.log"
   },
   {
-    "tc_id": "TC-ERR-03",
+    "tc_id": "TC-015",
+    "status": "FAIL",
+    "reason": [
+      "id-type"
+    ],
+    "evidence": "logs/TC-015.log"
+  },
+  {
+    "tc_id": "TC-016",
     "status": "FAIL",
     "reason": [
       "invalid-status"
     ],
-    "evidence": "logs/TC-ERR-03.log"
+    "evidence": "logs/TC-016.log"
   },
   {
-    "tc_id": "TC-ERR-04",
+    "tc_id": "TC-017",
+    "status": "FAIL",
+    "reason": [
+      "invalid-status"
+    ],
+    "evidence": "logs/TC-017.log"
+  },
+  {
+    "tc_id": "TC-018",
     "status": "FAIL",
     "reason": [
       "elapsed-negative"
     ],
-    "evidence": "logs/TC-ERR-04.log"
+    "evidence": "logs/TC-018.log"
+  },
+  {
+    "tc_id": "TC-019",
+    "status": "FAIL",
+    "reason": [
+      "elapsed-negative"
+    ],
+    "evidence": "logs/TC-019.log"
+  },
+  {
+    "tc_id": "TC-020",
+    "status": "FAIL",
+    "reason": [
+      "elapsed-type"
+    ],
+    "evidence": "logs/TC-020.log"
   }
 ]

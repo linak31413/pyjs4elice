@@ -1,32 +1,24 @@
 [
-  {
-    "tc_id": "TC-001",
-    "actual": {"id": 1, "status": "ok", "elapsed_ms": 120},
-    "expected_pass": true
-  },
-  {
-    "tc_id": "TC-002",
-    "actual": {"id": 2, "status": "fail", "elapsed_ms": 45},
-    "expected_pass": true
-  },
-  {
-    "tc_id": "TC-ERR-01",
-    "actual": {"status": "ok", "elapsed_ms": 100},
-    "expected_pass": false
-  },
-  {
-    "tc_id": "TC-ERR-02",
-    "actual": {"id": "3", "status": "ok", "elapsed_ms": 50},
-    "expected_pass": false
-  },
-  {
-    "tc_id": "TC-ERR-03",
-    "actual": {"id": 4, "status": "unknown", "elapsed_ms": 10},
-    "expected_pass": false
-  },
-  {
-    "tc_id": "TC-ERR-04",
-    "actual": {"id": 5, "status": "ok", "elapsed_ms": -100},
-    "expected_pass": false
-  }
+  {"tc_id": "TC-001", "type": "contract", "actual": {"id": 1, "status": "ok", "elapsed_ms": 100}, "expected_pass": true},
+  {"tc_id": "TC-002", "type": "contract", "actual": {"id": 2, "status": "fail", "elapsed_ms": 50}, "expected_pass": true},
+  {"tc_id": "TC-003", "type": "contract", "actual": {"id": 3, "status": "ok", "elapsed_ms": 1500}, "expected_pass": true},
+  {"tc_id": "TC-004", "type": "contract", "actual": {"id": 4, "status": "fail", "elapsed_ms": 200}, "expected_pass": true},
+  {"tc_id": "TC-005", "type": "contract", "actual": {"id": 5, "status": "ok", "elapsed_ms": 350}, "expected_pass": true},
+
+  {"tc_id": "TC-006", "type": "contract", "actual": {"id": 6, "status": "ok", "elapsed_ms": 0}, "expected_pass": true},
+  {"tc_id": "TC-007", "type": "contract", "actual": {"id": 7, "status": "ok", "elapsed_ms": 0.0}, "expected_pass": true},
+  {"tc_id": "TC-008", "type": "contract", "actual": {"id": 8, "status": "ok", "elapsed_ms": 0.1}, "expected_pass": true},
+  {"tc_id": "TC-009", "type": "contract", "actual": {"id": 9, "status": "fail", "elapsed_ms": 99999}, "expected_pass": true},
+  {"tc_id": "TC-010", "type": "contract", "actual": {"id": 10, "status": "ok", "elapsed_ms": 1.5}, "expected_pass": true},
+
+  {"tc_id": "TC-011", "type": "contract", "actual": {"status": "ok", "elapsed_ms": 100}, "expected_pass": false},
+  {"tc_id": "TC-012", "type": "contract", "actual": {"id": 12, "elapsed_ms": 100}, "expected_pass": false},
+  {"tc_id": "TC-013", "type": "contract", "actual": {"id": 13, "status": "ok"}, "expected_pass": false},
+  {"tc_id": "TC-014", "type": "contract", "actual": {"id": "14", "status": "ok", "elapsed_ms": 100}, "expected_pass": false},
+  {"tc_id": "TC-015", "type": "contract", "actual": {"id": 15.5, "status": "ok", "elapsed_ms": 100}, "expected_pass": false},
+  {"tc_id": "TC-016", "type": "contract", "actual": {"id": 16, "status": "success", "elapsed_ms": 100}, "expected_pass": false},
+  {"tc_id": "TC-017", "type": "contract", "actual": {"id": 17, "status": "", "elapsed_ms": 100}, "expected_pass": false},
+  {"tc_id": "TC-018", "type": "contract", "actual": {"id": 18, "status": "ok", "elapsed_ms": -1}, "expected_pass": false},
+  {"tc_id": "TC-019", "type": "contract", "actual": {"id": 19, "status": "ok", "elapsed_ms": -0.01}, "expected_pass": false},
+  {"tc_id": "TC-020", "type": "contract", "actual": {"id": 20, "status": "ok", "elapsed_ms": "fast"}, "expected_pass": false}
 ]
