@@ -12,15 +12,76 @@
     "tc_id": "TC-002",
     "actual": {
       "id": 2,
-      "status": "bad",
+      "status": "fail",
       "elapsed_ms": 80
     },
-    "expected_pass": false
+    "expected_pass": true
   },
   {
     "tc_id": "TC-003",
     "actual": {
+      "id": 3,
       "status": "ok",
+      "elapsed_ms": 10.5
+    },
+    "expected_pass": true
+  },
+  {
+    "tc_id": "TC-004",
+    "actual": {
+      "status": "fail",
+      "elapsed_ms": 13.5
+    },
+    "expected_pass": false
+  },
+  {
+    "tc_id": "TC-005",
+    "actual": {
+      "id": 5,
+      "elapsed_ms": 2
+    },
+    "expected_pass": false
+  },
+  {
+    "tc_id": "TC-006",
+    "actual": {
+      "id": 6,
+      "status": "fail"
+    },
+    "expected_pass": false
+  },
+  {
+    "tc_id": "TC-007",
+    "actual": {
+      "id": 7,
+      "status": "bad",
+      "elapsed_ms": 836
+    },
+    "expected_pass": false
+  },
+  {
+    "tc_id": "TC-008",
+    "actual": {
+      "id": 8,
+      "status": "ok",
+      "elapsed_ms": "123"
+    },
+    "expected_pass": false
+  },
+  {
+    "tc_id": "TC-009",
+    "actual": {
+      "id": 9,
+      "status": "ok",
+      "elapsed_ms": 0
+    },
+    "expected_pass": true
+  },
+  {
+    "tc_id": "TC-010",
+    "actual": {
+      "id": 10,
+      "status": "fail",
       "elapsed_ms": -1
     },
     "expected_pass": false

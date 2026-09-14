@@ -6,16 +6,58 @@
   },
   {
     "tc_id": "TC-002",
+    "status": "PASS",
+    "reason": []
+  },
+  {
+    "tc_id": "TC-003",
+    "status": "PASS",
+    "reason": []
+  },
+  {
+    "tc_id": "TC-004",
+    "status": "FAIL",
+    "reason": [
+      "missing=['id']"
+    ]
+  },
+  {
+    "tc_id": "TC-005",
+    "status": "FAIL",
+    "reason": [
+      "missing=['status']"
+    ]
+  },
+  {
+    "tc_id": "TC-006",
+    "status": "FAIL",
+    "reason": [
+      "missing=['elapsed_ms']"
+    ]
+  },
+  {
+    "tc_id": "TC-007",
     "status": "FAIL",
     "reason": [
       "invalid-status"
     ]
   },
   {
-    "tc_id": "TC-003",
+    "tc_id": "TC-008",
     "status": "FAIL",
     "reason": [
-      "missing=['id']",
+      "elapsed-type"
+    ]
+  },
+  {
+    "tc_id": "TC-009",
+    "status": "PASS",
+    "reason": []
+  },
+  {
+    "tc_id": "TC-010",
+    "status": "FAIL",
+    "reason": [
       "elapsed-negative"
     ]
   }
